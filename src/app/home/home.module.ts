@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { StationsComponent } from '../components/stations/stations.component';
+import { ClosestStationsComponent } from '../components/closest-stations/closest-stations.component';
 
 @NgModule({
   imports: [
@@ -18,6 +20,6 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, StationsComponent, ClosestStationsComponent]
 })
 export class HomePageModule {}
